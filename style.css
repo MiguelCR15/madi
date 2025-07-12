@@ -1,0 +1,106 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to top right, #ffccff, #ffe6e6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Contenedor principal */
+.contenedor {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Títulos y textos */
+h1 {
+  color: #ff6699;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #cc0066;
+  margin-top: 25px;
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.1em;
+  color: #444;
+  margin-top: 10px;
+}
+
+/* Botones */
+.botones {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+button {
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1.2em;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #e60073;
+}
+
+/* Respuesta con animación */
+#respuesta {
+  position: relative;
+  margin-top: 30px;
+  min-height: 60px;
+}
+
+.oculto {
+  visibility: hidden;
+}
+
+.caida {
+  visibility: visible;
+  animation: caer 0.8s ease-out forwards;
+}
+
+@keyframes caer {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.respuesta {
+  font-size: 1.4em;
+  color: #660033;
+}
+
+
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¿Quieres ser mi novia?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Hola Madison❤️</h1>
+    <p>...</p>
+    <p>No puedo dejar de pensar en ti, en tu sonrisa, en tu forma de ser...</p>
+    <p>Me encantas por todo lo que eres 🥰</p>
+    <p>Me encanta todo de ti</p>
+    <h2>¿Quieres hacerme el chico más feliz del mundo siendo mi novia? 💖</h2>
+
+    <div class="botones">
+      <button onclick="respuesta('¡Sí! 😍')">Sí</button>
+      <button onclick="respuesta('¡No 😢, pero aún te aprecio!')">No</button>
+    </div>
+
+    <div id="respuesta" class="oculto"></div>
+  </div>
+
+  <script>
+    function respuesta(texto) {
+      const res = document.getElementById("respuesta");
+      res.innerHTML = "<p class='respuesta'>" + texto + "</p>";
+      res.classList.remove("oculto");
+      res.classList.add("caida");
+    }
+  </script>
+</body>
+</html>
